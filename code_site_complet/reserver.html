@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capo Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imgsite/logosurf.png" type="image/x-icon" />
+    <script src="script.js" defer></script>
+  </head>
+  <body id="body">
+    <header>
+      <div class="réseaux">
+        <a href="tel:+33767248354" target="_blank">
+          <img class="contact" src="imgsite/telblancgrand.png" alt="img" />
+        </a>
+        <a href="mailto:yaelmaury03@gmail.com" target="_blank">
+          <img class="contact" src="imgsite/mailblancgrand.png" alt="img" />
+        </a>
+        <a id="insta" href="https://instagram.com" target="_blank">
+          <img class="contact" src="imgsite/intablancgrand.png" alt="img" />
+        </a>
+      </div>
+      <a id="aa" href="index.html">
+        <img id="logo" src="imgsite/logosurf.png" alt="lelogo" />
+      </a>
+      <div class="navbar-right">
+        <a href="Activitéscours.html" class="texte">Cours et activités</a>
+        <a href="locations.html" class="texte">Locations</a>
+        <a href="reserver.html" class="texte">Reserver</a>
+        <a href="boutique.html" class="texte">Boutique</a>
+      </div>
+    </header>
+    <main id="formulaire">
+      <h1 class="texte">Formulaire de Réservation</h1>
+      <form action="/ma-page-de-traitement" method="post">
+        <ul>
+          <li>
+            <label for="nameinputid">Nom:</label>
+            <input
+              type="text"
+              id="nameinputid"
+              name="user_name"
+              placeholder="Entrez votre nom"
+            />
+            <p id="alertname" class="disparu texterefus">
+              Veuillez renseigner votre nom
+            </p>
+          </li>
+          <li>
+            <label for="firstnameinputid">Prénom:</label>
+            <input
+              type="text"
+              id="firstnameinputid"
+              name="user_name"
+              placeholder="Entrez votre prénom"
+            />
+            <p id="alertfirstname" class="disparu texterefus">
+              Veuillez renseigner votre prénom
+            </p>
+          </li>
+          <li>
+            <label for="emailinputid">E-mail:</label>
+            <input
+              type="email"
+              id="emailinputid"
+              name="user_mail"
+              placeholder="Entrez votre E-mail"
+            />
+            <p id="alertemail" class="disparu texterefus">
+              Veuillez renseigner votre email
+            </p>
+          </li>
+          <li>
+            <label for="expérienceinputid" class="">Expérience choisie:</label>
+            <select name="typeexp" id="expérienceinputid">
+              <option value="">--Choisis une expérience--</option>
+              <option value="location">Location</option>
+              <option value="activité">Cours et activitées</option>
+            </select>
+            <p id="alertexpérience" class="disparu texterefus">
+              Veuillez renseigner votre expérience
+            </p>
+          </li>
+          <li class="disparu" id="locationinputid">
+            <label for="selectlocationid">Location choisie:</label>
+            <select name="location" id="selectlocationid">
+              <option value="">--Choisis une location--</option>
+              <option value="Planche en mousse">Planche en Mousse</option>
+              <option value="Longboard">Longboard</option>
+              <option value="Mini Malibu">Mini Malibu</option>
+              <option value="Shortboard">Shortboard</option>
+              <option value="Fish">Fish</option>
+              <option value="Paddle">Paddle</option>
+              <option value="JetSki">JetSki</option>
+              <option value="JetSki sans permis">JetSki sans permis</option>
+              <option value="Pédalo">Pédalo</option>
+              <option value="Scooter sous-marin">Scooter sous-marin</option>
+            </select>
+            <p id="alertlocation" class="disparu texterefus">
+              Veuillez renseigner la location de votre choix
+            </p>
+          </li>
+          <li id="activitéinputid" class="disparu">
+            <label for="selectactivitéid">Activitée choisie:</label>
+            <select name="location" id="selectactivitéid">
+              <option value="">--Choisis une activitée--</option>
+              <option value="Bouée tractée">Bouée tractée</option>
+              <option value="Balade en jetski">Balade en jetski</option>
+              <option value="Cours initiation">Cours initiation</option>
+              <option value="Cours adulte">Cours adulte</option>
+              <option value="Cours enfant">Cours enfant</option>
+            </select>
+            <p id="alertactivité" class="disparu texterefus">
+              Veuillez renseigner l'activitée de votre choix
+            </p>
+          </li>
+          <li>
+            <label for="nbpersonnesinput" class="">Nombre de personnes:</label>
+            <select name="typepersonnes" id="nbpersonnesinput">
+              <option value="">--Choisis un nombre de personnes--</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <p id="alertnbpersonnes" class="disparu texterefus">
+              Veuillez renseigner le nombre de personnes participant
+            </p>
+          </li>
+          <li>
+            <label for="messageinputid">Message:</label>
+            <textarea
+              id="messageinputid"
+              name="user_message"
+              placeholder="Entrez votre message"
+            ></textarea>
+            <p id="alertmessage" class="disparu texterefus">
+              Veuillez préciser la nature de votre demande
+            </p>
+          </li>
+        </ul>
+        <div class="boutonformulaire">
+          <button id="boutonformulaireid" type="button" class="form-control">
+            Envoyer le formulaire
+          </button>
+          <input type="reset" value="Reinitialiser" class="form-control" />
+        </div>
+      </form>
+      <div class="pastillepanier disparu" id="pastillevaleur">0</div>
+
+      <button id="boutonpanierid" class="boutonpanier" type="button">🛒</button>
+
+      <div id="overlaypanierid" class="disparu zonepanier">
+        <div class="alignpaniertxt">
+          <h3>Panier</h3>
+          <div id="div50" class="disparu div50cl">
+            <p id="carte50">Carte cadeau 50€</p>
+            <p id="numero50">X 0</p>
+          </div>
+          <div id="div100" class="disparu div100cl">
+            <p id="carte100">Carte cadeau 100€</p>
+            <p id="numero100">X 0</p>
+          </div>
+        </div>
+        <div class="totaldiv">
+          <p id="total">Total :</p>
+          <button id="btnréinitialiser">Réinitialiser</button>
+        </div>
+      </div>
+      <div id="notifvalide" class="validationformulairediv">
+        <p id="txtvalidé" class="textesimple">
+          Le Formulaire a été envoyé avec succès
+        </p>
+      </div>
+      <div id="notifinvalide" class="invalidationformulairediv">
+        <p id="txtinvalidé" class="textesimple">
+          Le Formulaire n'a pas pu être envoyé
+        </p>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="lespieds">
+      <div class="footerdivgauche">
+        <a href="">Conditions d'utilisation</a>
+        <a href="">En savoir plus</a>
+        <a href="https://youtu.be/xvFZjo5PgG0?si=xVcmhJA8STQlTx7_"
+          >Quelque chose</a
+        >
+      </div>
+      <div class="footerdivdroit">
+        <a href="tel:+33767248354" target="_blank">
+          <img class="contactbas" src="imgsite/telneutre.png" alt="img" />
+        </a>
+        <a href="mailto:yaelmaury03@gmail.com" target="_blank">
+          <img class="contactbas" src="imgsite/mailneutre.png" alt="img" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img class="contactbas" src="imgsite/instaneutre.png" alt="img" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</html>

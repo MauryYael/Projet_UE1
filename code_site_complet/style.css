@@ -1,0 +1,856 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/* #region texte */
+.titrepage {
+  padding-bottom: 60px;
+}
+.titreactivitéscours {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
+  font-size: 3em;
+}
+.texte {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 3px black;
+}
+.textesimple {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.corptexte {
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: small;
+}
+.sous-titre {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(182, 246, 248);
+}
+.texterefus {
+  color: red;
+  font-style: italic;
+}
+
+/* #endregion */
+.nv-right-mots {
+  transition: all ease 0.3s;
+}
+.nv-right-mots:hover {
+  transform: scale(1.07);
+}
+
+.imgtitre {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-image: linear-gradient(to bottom, #262c7e, transparent 60%);
+
+  backdrop-filter: blur(5px);
+
+  justify-content: space-between;
+}
+main {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tripleimage {
+  display: flex;
+  flex-direction: row;
+  transition: all 0.3s ease;
+  margin: 10vh;
+  gap: 5px;
+}
+.tripleimage a {
+  display: block;
+  width: 90%;
+  margin-bottom: 20px;
+}
+/* #region contact */
+.contact {
+  display: flex;
+  cursor: pointer;
+  height: 5vw;
+
+  border-radius: 20%;
+  box-shadow: 6px 6px black, -3px -3px 15px rgb(242, 242, 242);
+  transition: all 0.3s ease;
+}
+.contact:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px black;
+}
+.contactbas {
+  display: flex;
+  cursor: pointer;
+  height: 5vw;
+  border-radius: 20%;
+  transition: all 0.3s ease;
+}
+.contactbas:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px black;
+}
+.réseaux {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* #endregion */
+
+#logo {
+  width: 40%;
+  border-radius: 50%;
+  box-shadow: 1px 20px 50px black;
+  cursor: pointer;
+}
+
+.navbar-right {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+}
+
+#aa {
+  /* width: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+#aa:hover #logo {
+  transform: scale(1.05);
+  box-shadow: 1px 20px 60px black;
+}
+
+.Boutonhaut {
+  display: flex;
+  cursor: pointer;
+
+  align-items: center;
+  border-radius: 15px;
+  height: 30%;
+  width: 30%;
+  border: 0;
+  line-height: 2.5;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 1px #02011e;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #5b4f7f, #42b0b0, #e5d0a1);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+.Boutonhaut:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(56, 45, 124),
+    #4272b0,
+    #726c4e
+  );
+}
+
+.Boutonhaut:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(imgsite/fondgrandv1.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: initial;
+}
+.imagescentre {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10%;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+
+  max-width: 450px;
+  height: 90%;
+}
+.imagescentre:hover {
+  transform: scale(1.05);
+}
+
+.paragraphe {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 125%;
+  text-align: center;
+  /* -webkit-text-stroke-width: 2px; */
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgba(1, 64, 92, 0.5);
+  padding: 10px;
+}
+.intertitre {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.maphoraire {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15vh 0 5vh 0;
+}
+.map {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+.ggmp {
+  border-radius: 5%;
+  width: 100%;
+  max-width: 100%;
+  height: 450px;
+}
+.horaire {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 2%;
+  font-size: 30px;
+}
+.boutonbasgauche {
+  position: fixed;
+  bottom: 200px;
+  padding: 20px 20px 20px 20px;
+  left: 20px;
+  text-align: center;
+  border-radius: 35px;
+  border: 2px #fff;
+}
+
+.boutonbas:hover {
+  background-color: #5a5fac;
+}
+
+.boutonbas:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+footer {
+  background-color: rgb(15, 47, 65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lespieds {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerdivgauche {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4vh;
+  border-right: solid #fff;
+  justify-content: space-evenly;
+}
+.footerdivgauche a {
+  color: #fff;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.footerdivdroit {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 4vh;
+}
+@media screen and (max-width: 1377px) {
+  .tripleimage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-right {
+    display: none;
+  }
+  .texte {
+    font-size: small;
+    -webkit-text-stroke-width: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .maphoraire {
+    display: flex;
+    flex-direction: column;
+  }
+  .map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .horaire {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .réseaux {
+    display: none;
+  }
+}
+
+.locationsection {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.locationtexte {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  /* gap: 20px; */
+  /* align-items: center; */
+  flex: 1;
+  padding: 10% 0 0 0;
+}
+.corpdeloctexte {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  /* gap: 20px; */
+  /* align-items: center; */
+  flex: 1;
+  padding: 2% 0 0 0;
+}
+
+.corpdeloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40vh;
+}
+.proftexte {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 5vw 0 5vw;
+}
+.bouton-textelocation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.btnlocationitem {
+  background-color: #5268c8;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 50%;
+  border-radius: 30px;
+  align-self: flex-end;
+}
+.btninfoloc {
+  background-color: #5268c8;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 50%;
+  border-radius: 30px;
+  align-self: flex-end;
+}
+.btngauche {
+  align-self: flex-start;
+}
+.itemlocation {
+  height: 300px;
+  width: 900px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  background-color: #262c7e;
+  border-radius: 20px;
+  padding: 0 0 0 5%;
+}
+.itemvehicule {
+  height: 400px;
+  width: 900px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  background-color: #262c7e;
+  border-radius: 20px;
+  padding: 0 0 0 5%;
+}
+.itemplanche {
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  background-color: #262c7e;
+  border-radius: 20px;
+  padding: 0 0 0 5%;
+}
+
+.imgloc {
+  flex: 1;
+  min-width: 300px;
+  height: 100%;
+}
+.imgloc img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.imgloc1 {
+  flex: 1;
+  min-width: 300px;
+  height: 100%;
+}
+.imgloc1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+/* #region prof */
+.prof {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+.presentationProfs {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.imgprof {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+.imgprof img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+/* #endregion */
+/* #region boutique */
+#mainboutique {
+  background-color: #373fad;
+}
+
+.btncartecadeau {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(64, 167, 180);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.btncartecadeau:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.btncartecadeau:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.zonepanier {
+  display: flex;
+  position: fixed;
+  background: rgba(6, 28, 139, 0.652);
+  bottom: 40px;
+  height: 200px;
+  width: 200px;
+  right: 30px;
+  color: #fff;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  border-radius: 10px;
+}
+
+.div50cl {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.div100cl {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.totaldiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#total {
+  margin-left: 10px;
+}
+.boutonpanier {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30px;
+  padding: 20px 20px 20px 20px;
+  right: 20px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px #fff;
+  z-index: 1000;
+  background-color: #eee8d4;
+  height: 50px;
+  width: 50px;
+}
+.pastillepanier {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 63px;
+  /* padding: 20px; */
+  right: 20px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px #fff;
+  z-index: 1001;
+  background-color: #efd87f;
+  width: 20px;
+  height: 20px;
+}
+.alignpaniertxt {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+label {
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+  border-radius: 20px;
+}
+textarea {
+  border-radius: 10px;
+}
+#choisircarte {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#btnréinitialiser {
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* #endregion */
+/* #region meteo */
+#meteo {
+  height: 50vh;
+  width: 19vw;
+  position: fixed;
+  bottom: 100px;
+  left: 0px;
+  background-color: rgba(35, 62, 159, 0.624);
+  border-top-right-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+  border-top: solid #ffd655;
+  border-right: solid #ffd655;
+  transform: translateX(-150px);
+  transition: all ease 500ms;
+}
+#meteo:hover {
+  transform: translateX(0px);
+  background-color: rgba(35, 62, 159, 0.938);
+}
+
+#meteoajd {
+  transform: rotate(90deg);
+  width: 300px;
+}
+
+#meteocontenu {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  align-items: center;
+}
+
+#meteoposition {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+}
+.meteoicon {
+  width: 40%;
+}
+.infometeo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* #endregion */
+
+/* #region cours */
+.lescours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+#vaguebandeau {
+  width: 100%;
+}
+.bandeau {
+  margin: -30px;
+  width: 100%;
+}
+.corpdeexperiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 70vh;
+
+  overflow-y: scroll;
+}
+.itemexperiences {
+  height: 400px;
+  width: 1200px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  background-color: #262c7e;
+  border-radius: 20px;
+  padding: 0 0 0 5%;
+}
+/* #cours {
+  height: 50vh;
+  overflow-y: scroll;
+} */
+/* #endregion */
+
+/* #region formulaire */
+#formulaire {
+  background-color: #262c7e;
+  gap: 10px;
+  padding-top: 10px;
+}
+form {
+  margin: 0 auto;
+  width: 600px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 2em;
+}
+
+label {
+  display: block;
+  width: 90px;
+  text-align: left;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+}
+
+input {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #080808;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+input:focus {
+  padding-left: 3px;
+  outline: none;
+}
+#messageinputid {
+  width: 300px;
+  height: 150px;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+
+.boutonformulaire {
+  display: flex;
+  justify-content: center;
+}
+.form-control {
+  border-radius: 30px;
+  border: none;
+  padding: 8px;
+  margin: 10px;
+  color: #fff;
+  background-color: #262c7e;
+  display: flex;
+  justify-self: center;
+  width: fit-content;
+  padding: 8px 20px 8px 20px;
+}
+.validationformulairediv {
+  background-color: #00ff55;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+  width: 40%;
+  height: 150px;
+  bottom: 0px;
+  border-radius: 50px;
+  transform: translateY(100%);
+  transition: all ease 600ms;
+}
+
+#txtvalidé {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.invalidationformulairediv {
+  background-color: #ff0000;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+  width: 40%;
+  height: 150px;
+  bottom: 0px;
+  border-radius: 50px;
+  transform: translateY(100%);
+  transition: all ease 600ms;
+}
+#txtinvalidé {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.apparition {
+  transform: translateY(0%);
+}
+.disparition {
+  transform: translateY(0%);
+}
+input::placeholder {
+  color: #7d7a7a;
+}
+/* #endregion */
+
+.reverse {
+  flex-direction: row-reverse;
+  padding: 0 5% 0 0;
+}
+.reverseimg {
+  transform: scaleY(-1);
+}
+.disparu {
+  display: none;
+}
+
+.valide {
+  border: 3px solid #00ff55;
+}
+.invalide {
+  border: 3px solid #ff0000;
+}
+.actif {
+  border: 3px solid #0015ff;
+}
+
+/* :root {
+  --padding: 10px;
+} */
+/* clac */

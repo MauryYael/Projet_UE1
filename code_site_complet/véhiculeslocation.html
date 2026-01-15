@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capo Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imgsite/logosurf.png" type="image/x-icon" />
+    <script src="script.js" defer></script>
+  </head>
+  <body id="body">
+    <header>
+      <div class="réseaux">
+        <a href="tel:+33767248354" target="_blank">
+          <img class="contact" src="imgsite/telblancgrand.png" alt="img" />
+        </a>
+        <a href="mailto:yaelmaury03@gmail.com" target="_blank">
+          <img class="contact" src="imgsite/mailblancgrand.png" alt="img" />
+        </a>
+        <a id="insta" href="https://instagram.com" target="_blank">
+          <img class="contact" src="imgsite/intablancgrand.png" alt="img" />
+        </a>
+      </div>
+      <a id="aa" href="index.html">
+        <img id="logo" src="imgsite/logosurf.png" alt="lelogo" />
+      </a>
+      <div class="navbar-right">
+        <a href="Activitéscours.html" class="texte nv-right-mots"
+          >Cours et activités</a
+        >
+        <a href="locations.html" class="texte nv-right-mots">Locations</a>
+        <a href="reserver.html" class="texte nv-right-mots">Reserver</a>
+        <a href="boutique.html" class="texte nv-right-mots">Boutique</a>
+      </div>
+    </header>
+    <main>
+      <h1 class="texte titrepage">Planches en Location</h1>
+      <section class="locationsection">
+        <div class="itemvehicule">
+          <div class="locationtexte">
+            <h3 class="texte">Pédalo</h3>
+            <p class="texte">
+              Apprécié pour sa grande stabilité et son rythme paisible, ce
+              bateau classique privilégie la convivialité. Il offre un espace de
+              détente sécurisant pour les familles, permettant de naviguer
+              tranquillement à la force des jambes tout en profitant d'une
+              plateforme idéale pour les bains de soleil et la baignade.
+            </p>
+            <h4 class="sous-titre">Pour 1 à 5 personnes</h4>
+            <a href="reserver.html" class="btnlocationitem btngauche corptexte"
+              >15€/demi-heure</a
+            >
+          </div>
+          <div class="imgloc">
+            <img
+              src="imgsite/locationvehicules/pedalo.jpg"
+              alt="ah"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="itemvehicule reverse">
+          <div class="locationtexte">
+            <h3 class="texte">Jet Ski</h3>
+            <p class="texte">
+              Amateurs de sensations fortes, prenez les commandes de nos
+              machines pour une dose pure d'adrénaline. Cette activité allie
+              vitesse explosive et liberté totale, vous permettant de fendre les
+              vagues, d'explorer le littoral sous un angle nouveau et de vivre
+              une expérience de pilotage intense en toute sécurité.
+            </p>
+            <h4 class="sous-titre">Pour 1 à 2 personnes</h4>
+            <a href="reserver.html" class="btnlocationitem corptexte"
+              >50€/15min</a
+            >
+          </div>
+          <div class="imgloc">
+            <img
+              src="imgsite/locationvehicules/jetnormal.jpeg"
+              alt="ah"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="itemvehicule">
+          <div class="locationtexte">
+            <h3 class="texte">Jet Ski (sans permis)</h3>
+            <p class="texte">
+              Amateurs de sensations fortes, goûtez à l'adrénaline du pilotage
+              sans même avoir le permis bateau. Encadrée par des moniteurs,
+              cette initiation offre une prise en main immédiate et sécurisée,
+              permettant de profiter de la vitesse et d'explorer le littoral aux
+              commandes de votre propre machine dès la première sortie.
+            </p>
+            <h4 class="sous-titre">Pour 1 à 2 personnes</h4>
+            <a href="reserver.html" class="btnlocationitem btngauche corptexte"
+              >40€/15min</a
+            >
+          </div>
+          <div class="imgloc">
+            <img
+              src="imgsite/locationvehicules/jetskisansp.jpg"
+              alt="ah"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="itemvehicule reverse">
+          <div class="locationtexte">
+            <h3 class="texte">Scooter Sous-marin</h3>
+            <p class="texte">
+              Caractérisé par son design hydrodynamique et sa propulsion
+              silencieuse, cet appareil révolutionne la baignade. Il offre une
+              traction fluide sans aucun effort physique, permettant de nager
+              comme un dauphin en surface ou de plonger en apnée pour observer
+              les fonds marins avec une agilité surprenante
+            </p>
+            <h4 class="sous-titre">Pour 1 personne</h4>
+            <a href="reserver.html" class="btnlocationitem corptexte"
+              >10€/heure</a
+            >
+          </div>
+          <div class="imgloc">
+            <img
+              src="imgsite/locationvehicules/scootersousmarin.jpg"
+              alt="ah"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <a href="#body">
+        <button class="boutonbasgauche" type="button">🔝</button>
+      </a>
+      <div class="pastillepanier disparu" id="pastillevaleur">0</div>
+
+      <button id="boutonpanierid" class="boutonpanier" type="button">🛒</button>
+      <div id="overlaypanierid" class="disparu zonepanier">
+        <div class="alignpaniertxt">
+          <h3>Panier</h3>
+          <div id="div50" class="disparu div50cl">
+            <p id="carte50">Carte cadeau 50€</p>
+            <p id="numero50">X 0</p>
+          </div>
+          <div id="div100" class="disparu div100cl">
+            <p id="carte100">Carte cadeau 100€</p>
+            <p id="numero100">X 0</p>
+          </div>
+        </div>
+        <div class="totaldiv">
+          <p id="total">Total :</p>
+          <button id="btnréinitialiser">Réinitialiser</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="lespieds">
+      <div class="footerdivgauche">
+        <a href="">Conditions d'utilisation</a>
+        <a href="">En savoir plus</a>
+        <a href="https://youtu.be/xvFZjo5PgG0?si=xVcmhJA8STQlTx7_"
+          >Quelque chose</a
+        >
+      </div>
+      <div class="footerdivdroit">
+        <a href="tel:+33767248354" target="_blank">
+          <img class="contactbas" src="imgsite/telneutre.png" alt="img" />
+        </a>
+        <a href="mailto:yaelmaury03@gmail.com" target="_blank">
+          <img class="contactbas" src="imgsite/mailneutre.png" alt="img" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img class="contactbas" src="imgsite/instaneutre.png" alt="img" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</html>
