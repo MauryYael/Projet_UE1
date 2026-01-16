@@ -51,10 +51,8 @@ git clone <votre-repo>
 - Les images sont organisées par catégories dans `imgsite/`
 - Logique métier centralisée dans `script.js`
 
-## 📄 Licence
-
-[Spécifiez votre licence]
 
 ## 👥 Auteur
 
-[Votre nom/organisation]
+Yael Maury
+
