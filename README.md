@@ -1,7 +1,7 @@
 # 🏄‍♂️ Location d'Activités Nautiques & Véhicules
 
 Plateforme web pour la réservation de locations d'activités nautiques et de véhicules.
-
+https://maury.yael-ue1.aflokkat-projet.fr
 ## 📋 Fonctionnalités
 
 - **Réservation de planches de surf** - Consulter et réserver des planches disponibles
@@ -55,4 +55,5 @@ git clone <votre-repo>
 ## 👥 Auteur
 
 Yael Maury
+
 
